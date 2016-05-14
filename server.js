@@ -5,7 +5,7 @@ var http = require("http");
 var shortURLPromise, short = require('short');
 var regex = /^https?:\/\/(www)?\.[a-z]+\.[a-z]{1,3}.*$/
 
-short.connect('mongodb://localhost/short');
+short.connect('mongodb://eldart:abeceda@ds011369.mlab.com:11369/url-shortener');   
 short.connection.on('error', function(error) {
     console.log({ error: "Unexpected error" });;
 });
