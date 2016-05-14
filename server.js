@@ -2,9 +2,7 @@
 var express = require('express');
 var app = express();
 var http = require("http");
-var db = require("mongodb");
 var shortURLPromise, short = require('short');
-var listURLsPromise = require('short');
 var regex = /^https?:\/\/(www)?\.[a-z]+\.[a-z]{1,3}.*$/
 
 short.connect('mongodb://localhost/short');
