@@ -1,8 +1,6 @@
 'use strict';
 var express = require('express');
 var app = express();
-var redirect = require("express-redirect");
-redirect(app);
 var http = require("http");
 var db = require("mongodb");
 var shortURLPromise, short = require('short');
